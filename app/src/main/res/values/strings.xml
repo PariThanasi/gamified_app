@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name"> WorldOfJava </string>
+
+    <!-- LOGIN strings-->>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_password">Password</string>
+    <string name="text_signIn">Sign In</string>
+    <string name="text_createAccount">Create new account</string>
+    <string name="text_forgotPassword">Forgot your password?</string>
+
+
+    <!-- REGISTER strings-->>
+    <string name="text_introRegister1">Create a WordOfJava account</string>
+    <string name="text_introRegister2">Learn, Play, Code. Build  your coder profile !!</string>
+    <string name="text_register">Register</string>
+    <string name="hint_username">Username</string>
+    <string name="checkbox_terms">To register with us please tick to agree to our Terms and Conditions </string>
+    <string name="text_alreadyMember">Already a member?</string>
+    <string name="text_alreadyMemberSignIn"> Sign in</string>
+
+    <!-- FORGOT PASSWORD strings-->>
+    <string name="text_introFP1">Forgot password ? </string>
+    <string name="text_introFP2">No worries, that often happens. Please enter the e-mail address associated with your account! </string>
+    <string name="text_introFP3">A new password will be sent to your e-mail address soon...</string>
+    <string name="text_resetPassword">Reset Password</string>
+
+    <!-- MAIN DASHBOARD strings-->>
+    <string name="text_applicationName">WordOfJava</string>
+
+
+</resources>

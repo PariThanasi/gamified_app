@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".QuizStructureActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/quizCategoriesToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="#193343"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:titleTextColor="@android:color/white">
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="692dp"
+            android:layout_margin="1dp"
+            android:padding="1dp">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="408dp"
+                android:layout_height="493dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="100dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="@style/HorizontalProgressBar"
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:max="15" />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp">
+
+
+                    <TextView
+                        android:id="@+id/CorrectlyAnsweredQuestions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:singleLine="true"
+                        android:text="1/15"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="22sp"
+                        android:textStyle="bold|italic" />
+
+
+                    <TextView
+                        android:id="@+id/textViewTimer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="2dp"
+                        android:text="10:00"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="24sp"
+                        android:textStyle="bold|normal" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="98dp"
+                    android:text="Question Text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup1"
+                    android:layout_width="match_parent"
+                    android:layout_height="277dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="0.03">
+
+                    <RadioButton
+                        android:id="@+id/radio1"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:checked="false"
+                        android:text="Answer1"
+                        android:textColor="@color/ic_launcher_background" />
+
+                    <RadioButton
+                        android:id="@+id/radio2"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:text="Answer2"
+                        android:textColor="@color/ic_launcher_background" />
+
+                    <RadioButton
+                        android:id="@+id/radio3"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:text="Answer3"
+                        android:textColor="@color/ic_launcher_background" />
+
+                    <RadioButton
+                        android:id="@+id/radio4"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:text="Answer4"
+                        android:textColor="@color/ic_launcher_background" />
+
+                    <Button
+                        android:id="@+id/buttonNextQuestion"
+                        android:layout_width="195dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="80dp"
+                        android:background="@drawable/button_rectangle"
+                        android:text="NEXT"
+                        android:textColor="#fff" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gr.hua.thesis.parith.gamifiedlearningapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".QuizStructureActivity"
+            android:theme="@style/MainActivityTheme"/>
+
+        <!-- Here we set parentActivityName (of QuizCategoriesActivity), so the Backspace on tool bar will redirect us to MainActivity -->
+        <activity
+            android:name=".QuizCategoriesActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/MainActivityTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/MainActivityTheme" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

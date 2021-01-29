@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--https://stackoverflow.com/questions/54836460/android-menu-item-in-left-side/54836748 -->
+    <item
+        android:id="@+id/nav_info"
+        android:title="Info"
+        android:icon="@drawable/ic_more_info"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout"
+        android:icon="@drawable/logout"
+        app:showAsAction="ifRoom"/>
+
+</menu>

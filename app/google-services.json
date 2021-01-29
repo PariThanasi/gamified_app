@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "539110218248",
+    "firebase_url": "https://gamified-learning-project-default-rtdb.firebaseio.com",
+    "project_id": "gamified-learning-project",
+    "storage_bucket": "gamified-learning-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539110218248:android:db10f337e6cc0501444fbd",
+        "android_client_info": {
+          "package_name": "gr.hua.thesis.parith.gamifiedlearningapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "539110218248-rf8ug5hjv1kjugeqjp8pdfbon56qgen5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "gr.hua.thesis.parith.gamifiedlearningapp",
+            "certificate_hash": "2fe268134b14a91454a4ec548a40f254e4a2e8be"
+          }
+        },
+        {
+          "client_id": "539110218248-kf02tgi7v8rb1e61tobi5h29a83gop29.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtxRtUaFZSB_b6keQmRkTM5EaNQ-TZwgg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "539110218248-kf02tgi7v8rb1e61tobi5h29a83gop29.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

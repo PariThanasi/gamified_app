@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- Action bars isn't flexible like Toolbar. So we will set all application with no action bars, and
+    in which activity we want to add a bar we will do it through tool bar-->
+<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!-- colors ->update the values in res/values/colors.xml-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+<!-- https://stackoverflow.com/questions/45422761/how-can-i-change-colorprimarydark-for-just-one-activity -->
+    <style name="MainActivityTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">#153245</item>
+    </style>
+
+<!-- Style for Horizontal Progress Bar, On Quizzes -->
+    <style name="HorizontalProgressBar" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/horizontal_progress_bar</item>
+        <item name="android:minHeight">10dp</item>
+        <item name="android:maxHeight">20dp</item>
+    </style>
+
+    <!-- Style for RadioButtons, On Quizzes -->
+
+    <style name="RadioButton">
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">?android:attr/listChoiceIndicatorSingle</item>
+        <item name="android:drawablePadding">5sp</item>
+        <item name="android:padding">5sp</item>
+    </style>
+
+</resources>
