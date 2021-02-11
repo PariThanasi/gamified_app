@@ -53,7 +53,7 @@ public class RegisterActivity extends AppCompatActivity {
         termsCheckBox = findViewById(R.id.checkBoxTerms);
 
         //Initialize ProgressBar
-        registerProgressBar = (ProgressBar)findViewById(R.id.progressBarRegister);
+        registerProgressBar = (ProgressBar) findViewById(R.id.progressBarRegister);
 
 
         //Build the Listener for "Register"
@@ -88,8 +88,6 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
 
-
-
     //Method to check inputs
     private void checkRegisterInputs() {
 
@@ -98,67 +96,67 @@ public class RegisterActivity extends AppCompatActivity {
         String username = inputUsername.getText().toString();
         String email = inputEmail.getText().toString();
         String password = inputPassword.getText().toString();
-        Boolean checkBox =termsCheckBox.isChecked();
+        Boolean checkBox = termsCheckBox.isChecked();
 
 
-        if(username.isEmpty()){
+        if (username.isEmpty()) {
             inputUsername.setError("Username is required!");
             inputUsername.requestFocus();
             return;
         }
-        if(username.length() < 6){
+        if (username.length() < 6) {
             inputUsername.setError("Minimum characters for username is 6");
             inputUsername.requestFocus();
             return;
         }
-        if(email.isEmpty()){
+        if (email.isEmpty()) {
             inputEmail.setError("Email is required!");
             inputEmail.requestFocus();
             return;
         }
-        if( !Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             inputEmail.setError("Not valid email");
             inputEmail.requestFocus();
             return;
         }
-        if(password.isEmpty()){
+        if (password.isEmpty()) {
             inputPassword.setError("Password is required!");
             inputPassword.requestFocus();
             return;
         }
-        if(password.length() < 7){
+        if (password.length() < 7) {
             inputPassword.setError("Minimum characters for password is 7");
             inputPassword.requestFocus();
             return;
         }
-        if (checkBox == false){
+        if (checkBox == false) {
             Toast.makeText(RegisterActivity.this, "You have to read and accept terms and conditions", Toast.LENGTH_SHORT).show();
         }
         registerProgressBar.setVisibility(View.VISIBLE);
 
 
-            mAuth.createUserWithEmailAndPassword(email, password)
-                    .addOnCompleteListener(RegisterActivity.this, new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-                            if (task.isSuccessful()) {
-                                Toast.makeText(RegisterActivity.this, "Successfully registration!", Toast.LENGTH_SHORT).show();
+        mAuth.createUserWithEmailAndPassword(email, password)
+                .addOnCompleteListener(RegisterActivity.this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            Toast.makeText(RegisterActivity.this, "Successfully registration!", Toast.LENGTH_SHORT).show();
 
-                                Intent intentRegister = new Intent(RegisterActivity.this, LoginActivity.class);
-                                intentRegister.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                                startActivity(intentRegister);
+                            Intent intentRegister = new Intent(RegisterActivity.this, LoginActivity.class);
+                            intentRegister.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                            startActivity(intentRegister);
 
-                            } else {
+                        } else {
 
-                                Toast.makeText(RegisterActivity.this, "Fail registration! Try again! ", Toast.LENGTH_SHORT).show();
-                                registerProgressBar.setVisibility(View.GONE);
-                            }
+                            Toast.makeText(RegisterActivity.this, "Fail registration! Try again! ", Toast.LENGTH_SHORT).show();
+                            registerProgressBar.setVisibility(View.GONE);
                         }
-                    });
-
-        }
+                    }
+                });
 
     }
+
+}
 
 
 

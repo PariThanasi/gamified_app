@@ -1,76 +1,16 @@
 package gr.hua.thesis.parith.gamifiedlearningapp;
 
 public class User {
-   // public String username, email;
+
     private String username;
     private String email;
-    private long createdAt;
-    public int compMarksE=0;
-    public int hardwareMarksE=0;
-    public int osMarksE=0;
-    public int finalMarks=0;
-
-    private String mRecipientId;
+    public int quest1Points=0;
 
 
-    public User() {
-    }
-
-    public User(String displayName, String email,long createdAt,int compMarksB,int compMarksI,int compMarksE,int hardwareMarksB,int hardwareMarksI,int hardwareMarksE,int osMarksB,int osMarksI,int osMarksE,int finalMarks) {
-
+    public User (String username, String email,int quest1Points) {
+        this.username = username;
         this.email = email;
-        this.createdAt = createdAt;
-        this.compMarksE=compMarksE;
-
-        this.hardwareMarksE=hardwareMarksE;
-
-        this.osMarksE=osMarksE;
-        this.finalMarks=finalMarks;
-    }
-
-
-
-    public int getCompMarksE() {
-        return compMarksE;
-    }
-
-    public void setCompMarksE(int compMarksE) {
-        this.compMarksE = compMarksE;
-    }
-
-
-    public int getHardwareMarksE() {
-        return hardwareMarksE;
-    }
-
-    public void setHardwareMarksE(int hardwareMarksE) {
-        this.hardwareMarksE = hardwareMarksE;
-    }
-
-
-    public int getOsMarksE() {
-        return osMarksE;
-    }
-
-    public void setOsMarksE(int osMarksE) {
-        this.osMarksE = osMarksE;
-    }
-
-    public int getFinalMarks() {
-        return finalMarks;
-    }
-
-    public void setFinalMarks(int finalMarks) {
-        this.finalMarks = finalMarks;
-    }
-
-    public long getCreatedAt() {
-        return createdAt;
-    }
-
-    private String getUserEmail() {
-        //Log.e("user email  ", userEmail);
-        return email;
+        this.quest1Points= quest1Points;
     }
 
     public String getUsername() {
@@ -81,16 +21,20 @@ public class User {
         return email;
     }
 
-    public void setUsername(String Username) {
-        this.username = Username;
+    public int getQuest1Points() {
+        return quest1Points;
     }
 
-    public String getRecipientId() {
-        return mRecipientId;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public void setRecipientId(String recipientId) {
-        this.mRecipientId = recipientId;
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setQuest1Points(int quest1Points) {
+        this.quest1Points = quest1Points;
     }
 }
 

@@ -42,7 +42,7 @@ public class LoginActivity extends AppCompatActivity {
 
         //Method to see if user is already sign in.
 
-        if (mAuth.getCurrentUser() !=null) {
+        if (mAuth.getCurrentUser() != null) {
             // Check if user is signed in (non-null) and update UI accordingly.
             startActivity(new Intent(getApplicationContext(), MainActivity.class));
             finish();
@@ -53,8 +53,7 @@ public class LoginActivity extends AppCompatActivity {
         inputEmail = findViewById(R.id.editTextEmailSignIn);
         inputPassword = findViewById(R.id.editTextPassSignIn);
 
-        loginProgressBar = (ProgressBar)findViewById(R.id.loginProgressBar);
-
+        loginProgressBar = (ProgressBar) findViewById(R.id.loginProgressBar);
 
 
         //Build the Listener for "Sign in"
@@ -79,69 +78,68 @@ public class LoginActivity extends AppCompatActivity {
         });
 
 
-         //Build the Listener for "Forgot Password"
-         findViewById(R.id.textViewForgotPassword).setOnClickListener(new View.OnClickListener() {
-          @Override
-          public void onClick(View v) {
-          //make a intent to go to Register Activity when we click the button "Create new activity"
-          startActivity(new Intent(LoginActivity.this, ForgotPasswordActivity.class));
-           }
+        //Build the Listener for "Forgot Password"
+        findViewById(R.id.textViewForgotPassword).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //make a intent to go to Register Activity when we click the button "Create new activity"
+                startActivity(new Intent(LoginActivity.this, ForgotPasswordActivity.class));
+            }
         });
 
 
     }
 
 
-        //Method to check inputs
-        private void checkLoginInputs () {
+    //Method to check inputs
+    private void checkLoginInputs() {
 
-            //take the input values to Strings
-            String email = inputEmail.getText().toString();
-            String password = inputPassword.getText().toString();
+        //take the input values to Strings
+        String email = inputEmail.getText().toString();
+        String password = inputPassword.getText().toString();
 
 
-            if(email.isEmpty()){
-                inputEmail.setError("Email is required!");
-                inputEmail.requestFocus();
-                return;
-            }
-            if( !Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-                inputEmail.setError("Not valid email");
-                inputEmail.requestFocus();
-                return;
-            }
-            if(password.isEmpty()){
-                inputPassword.setError("Password is required!");
-                inputPassword.requestFocus();
-                return;
-            }
-            if(password.length() < 7){
-                inputPassword.setError("Minimum characters for password is 7");
-                inputPassword.requestFocus();
-                return;
-            }
-            else
-                loginProgressBar.setVisibility(View.VISIBLE);
+        if (email.isEmpty()) {
+            inputEmail.setError("Email is required!");
+            inputEmail.requestFocus();
+            return;
+        }
+        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            inputEmail.setError("Not valid email");
+            inputEmail.requestFocus();
+            return;
+        }
+        if (password.isEmpty()) {
+            inputPassword.setError("Password is required!");
+            inputPassword.requestFocus();
+            return;
+        }
+        if (password.length() < 7) {
+            inputPassword.setError("Minimum characters for password is 7");
+            inputPassword.requestFocus();
+            return;
+        } else
+            loginProgressBar.setVisibility(View.VISIBLE);
 
-                  mAuth.signInWithEmailAndPassword(email, password)
-                    .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-                            if (task.isSuccessful()) {
-                                // Sign in success, update UI with the signed-in user's information
-                                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                                startActivity(intent);
+        mAuth.signInWithEmailAndPassword(email, password)
+                .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            // Sign in success, update UI with the signed-in user's information
+                            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                            startActivity(intent);
 
-                            } else {
-                                // If sign in fails, display a message to the user.
-                                Log.w("INFO", "signInWithEmail:failure", task.getException());
-                                Toast.makeText(LoginActivity.this, "Authentication failed. Please try again", Toast.LENGTH_SHORT).show();
-                                loginProgressBar.setVisibility(View.GONE);
-                            }
-
+                        } else {
+                            // If sign in fails, display a message to the user.
+                            Log.w("INFO", "signInWithEmail:failure", task.getException());
+                            Toast.makeText(LoginActivity.this, "Authentication failed. Please try again", Toast.LENGTH_SHORT).show();
+                            loginProgressBar.setVisibility(View.GONE);
                         }
-                    });
+
+                    }
+                });
 
     }
 

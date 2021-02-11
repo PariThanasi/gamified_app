@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
+    android:background="@drawable/quiz_structure"
     tools:context=".QuizStructureActivity">
 
     <RelativeLayout
@@ -25,50 +26,49 @@
 
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="692dp"
+            android:layout_height="700dp"
             android:layout_margin="1dp"
             android:padding="1dp">
 
 
             <LinearLayout
-                android:id="@+id/linearLayout"
+                android:id="@+id/linearLayoutQuizStructure"
                 android:layout_width="408dp"
-                android:layout_height="493dp"
-                android:layout_alignParentLeft="true"
+                android:layout_height="600dp"
                 android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
+                android:layout_marginLeft="0dp"
                 android:layout_marginTop="70dp"
                 android:layout_marginRight="0dp"
-                android:layout_marginBottom="100dp"
+                android:layout_marginBottom="20dp"
                 android:orientation="vertical"
                 android:padding="10dp">
 
 
                 <ProgressBar
-                    android:id="@+id/progressBar"
+                    android:id="@+id/quizProgressBar"
                     style="@style/HorizontalProgressBar"
                     android:layout_width="370dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
-                    android:layout_gravity="center"
-                    android:max="15" />
+                    android:max="10" />
 
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="45dp">
+                    android:layout_height="90dp">
 
 
                     <TextView
-                        android:id="@+id/CorrectlyAnsweredQuestions"
+                        android:id="@+id/correctlyAnsweredQuestions"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
                         android:singleLine="true"
-                        android:text="1/15"
+                        android:text="@string/text_correctly_questions"
                         android:textColor="@color/colorAccent"
                         android:textSize="22sp"
                         android:textStyle="bold|italic" />
@@ -80,7 +80,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:layout_marginRight="2dp"
-                        android:text="10:00"
+                        android:text="@string/text_timer"
                         android:textColor="@color/colorAccent"
                         android:textSize="24sp"
                         android:textStyle="bold|normal" />
@@ -89,58 +89,60 @@
 
 
                 <TextView
-                    android:id="@+id/textView1"
-                    android:layout_width="match_parent"
-                    android:layout_height="98dp"
-                    android:text="Question Text"
+                    android:id="@+id/questionText"
+                    android:layout_width="230dp"
+                    android:layout_height="208dp"
+                    android:layout_gravity="center"
+                    android:text="@string/text_question"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="@color/colorPrimaryDark" />
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"/>
 
                 <RadioGroup
                     android:id="@+id/radioGroup1"
-                    android:layout_width="match_parent"
-                    android:layout_height="277dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_weight="0.03">
+                    android:layout_width="390dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="0.01">
 
                     <RadioButton
                         android:id="@+id/radio1"
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
+                        android:layout_height="62dp"
                         android:checked="false"
-                        android:text="Answer1"
+                        android:text="@string/text_radio1"
                         android:textColor="@color/ic_launcher_background" />
 
                     <RadioButton
                         android:id="@+id/radio2"
                         android:layout_width="match_parent"
                         android:layout_height="45dp"
-                        android:text="Answer2"
+                        android:text="@string/text_radio2"
                         android:textColor="@color/ic_launcher_background" />
 
                     <RadioButton
                         android:id="@+id/radio3"
                         android:layout_width="match_parent"
                         android:layout_height="45dp"
-                        android:text="Answer3"
+                        android:text="@string/text_radio3"
                         android:textColor="@color/ic_launcher_background" />
 
                     <RadioButton
                         android:id="@+id/radio4"
                         android:layout_width="match_parent"
                         android:layout_height="45dp"
-                        android:text="Answer4"
+                        android:text="@string/text_radio4"
                         android:textColor="@color/ic_launcher_background" />
 
                     <Button
                         android:id="@+id/buttonNextQuestion"
                         android:layout_width="195dp"
                         android:layout_height="36dp"
-                        android:layout_marginLeft="80dp"
+                        android:layout_marginLeft="95dp"
                         android:layout_marginTop="20dp"
-                        android:layout_marginRight="80dp"
-                        android:background="@drawable/button_rectangle"
-                        android:text="NEXT"
+                        android:layout_marginRight="95dp"
+                        android:background="@drawable/button_rectangle_blue"
+                        android:text="@string/text_button_next"
                         android:textColor="#fff" />
 
                 </RadioGroup>

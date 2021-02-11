@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name"> WorldOfJava </string>
 
-    <!-- LOGIN strings-->>
+    <!-- LOGIN strings-->
     <string name="hint_email">E-mail</string>
     <string name="hint_password">Password</string>
     <string name="text_signIn">Sign In</string>
@@ -9,7 +9,7 @@
     <string name="text_forgotPassword">Forgot your password?</string>
 
 
-    <!-- REGISTER strings-->>
+    <!-- REGISTER strings-->
     <string name="text_introRegister1">Create a WordOfJava account</string>
     <string name="text_introRegister2">Learn, Play, Code. Build  your coder profile !!</string>
     <string name="text_register">Register</string>
@@ -18,14 +18,44 @@
     <string name="text_alreadyMember">Already a member?</string>
     <string name="text_alreadyMemberSignIn"> Sign in</string>
 
-    <!-- FORGOT PASSWORD strings-->>
+    <!-- FORGOT PASSWORD strings-->
     <string name="text_introFP1">Forgot password ? </string>
     <string name="text_introFP2">No worries, that often happens. Please enter the e-mail address associated with your account! </string>
     <string name="text_introFP3">A new password will be sent to your e-mail address soon...</string>
     <string name="text_resetPassword">Reset Password</string>
 
-    <!-- MAIN DASHBOARD strings-->>
+    <!-- MAIN DASHBOARD strings-->
     <string name="text_applicationName">WordOfJava</string>
+
+    <!-- QUIZ CATEGORIES strings-->
+    <string name="text_category1">Introduction to Object Oriented Programming</string>
+    <string name="text_category2">Types of Data/Operators</string>
+    <string name="text_category3">Flow Control</string>
+    <string name="text_category4">Data Structures</string>
+    <string name="text_category5">Class String</string>
+    <string name="text_category6">Classes and Objects</string>
+    <string name="text_category7">Heredity</string>
+    <string name="text_category8">Exceptions Handling</string>
+    <string name="text_category9">Input/Output Methods</string>
+    <string name="text_category10">Swing</string>
+
+    <!-- QUIZ STRUCTURE strings-->
+    <string name="text_correctly_questions">1/15</string>
+    <string name="text_timer">10:00</string>
+    <string name="text_question">Question Text</string>
+    <string name="text_radio1">AnswerA</string>
+    <string name="text_radio2">AnswerB</string>
+    <string name="text_radio3">AnswerC</string>
+    <string name="text_radio4">AnswerD</string>
+    <string name="text_button_next">NEXT</string>
+
+    <!-- QUIZ RESULTS strings-->
+    <string name="text_score">SCORE</string>
+    <string name="text_totalAnswered">Total Answered Questions:</string>
+    <string name="text_correctAnswered">Correct Answered:</string>
+    <string name="text_wrongAnswered">Wrong Answered:</string>
+    <string name="text_pointsEarned">Points Earned:</string>
+    <string name="text_buttonNextQuiz">NEXT</string>
 
 
 </resources>

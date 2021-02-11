@@ -67,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+
         /* --------- ACTIVITIES (..INTENTS) UNDER CONSTRUCTION --------------------------------------
         //Build the Listener for Button "Learn or cheat"
         Button leanButton = (Button) findViewById(R.id.learnButton);

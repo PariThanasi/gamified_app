@@ -22,7 +22,7 @@ public class QuizCategoriesActivity extends AppCompatActivity {
        Toolbar toolbar = findViewById(R.id.quizCategoriesToolbar);
        setSupportActionBar(toolbar);
 
-        getSupportActionBar().setTitle("Quiz Categories");
+        getSupportActionBar().setTitle("Choose a Category");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 

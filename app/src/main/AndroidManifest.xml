@@ -10,10 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ResultsActivity"
+            android:theme="@style/MainActivityTheme" /> <!-- Here we set parentActivityName (of ResultsActivity), so the Backspace on tool bar will redirect us to MainActivity -->
+        <activity
             android:name=".QuizStructureActivity"
-            android:theme="@style/MainActivityTheme"/>
-
-        <!-- Here we set parentActivityName (of QuizCategoriesActivity), so the Backspace on tool bar will redirect us to MainActivity -->
+            android:theme="@style/MainActivityTheme" /> <!-- Here we set parentActivityName (of QuizCategoriesActivity), so the Backspace on tool bar will redirect us to MainActivity -->
         <activity
             android:name=".QuizCategoriesActivity"
             android:parentActivityName=".MainActivity"

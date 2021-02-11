@@ -9,4 +9,10 @@
     <color name="textColor">#F6E5F6</color>
     <color name="errorColor">#82749A</color>
 
+    <!-- set Categories color -->>
+    <color name="categoriesTextColor">#FFFFFF</color>
+    <color name="backgroundColor">#65656C8C</color>
+
+
+
 </resources>

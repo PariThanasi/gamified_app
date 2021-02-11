@@ -35,8 +35,28 @@
 
                 </androidx.appcompat.widget.Toolbar>
 
-            </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="400dp"
+                    android:layout_height="140dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
 
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="379dp"
+                        android:layout_height="139dp"
+                        android:src="@drawable/app_logo" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -46,16 +66,17 @@
 
                 <Button
                     android:id="@+id/btn_category1"
+                    android:text="@string/text_category1"
                     android:layout_width="0dp"
-                    android:text="Introduction to Object Oriented Programming"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:background="#EB82749A"
-                    android:paddingLeft="45dp"
+                    android:background="#72656C8C"
+                    android:paddingLeft="30dp"
                     android:textAllCaps="false"
-                    android:textColor="#fff"
-                    android:textSize="18sp" />
+                    android:textColor="@color/categoriesTextColor"
+                    android:textSize="18sp"
+                    />
 
 
             </LinearLayout>
@@ -67,14 +88,14 @@
 
                 <Button
                     android:id="@+id/btn_category2"
-                    android:text="Types of Data/Operators"
+                    android:text="@string/text_category2"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:background="#A3855B8E"
                     android:textAllCaps="false"
-                    android:textColor="#fff"
+                    android:textColor="@color/categoriesTextColor"
+                    android:background="@color/backgroundColor"
                     android:textSize="18sp" />
 
             </LinearLayout>
@@ -86,14 +107,14 @@
 
                 <Button
                     android:id="@+id/btn_category3"
-                    android:text="Flow Control"
+                    android:text="@string/text_category3"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:background="#E2656C8C"
                     android:textAllCaps="false"
-                    android:textColor="#fff"
+                    android:textColor="@color/categoriesTextColor"
+                    android:background="@color/backgroundColor"
                     android:textSize="18sp" />
 
             </LinearLayout>
@@ -105,14 +126,14 @@
 
                 <Button
                     android:id="@+id/btn_category4"
-                    android:text="Data Structures"
+                    android:text="@string/text_category4"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:background="#374965"
                     android:textAllCaps="false"
-                    android:textColor="#fff"
+                    android:textColor="@color/categoriesTextColor"
+                    android:background="@color/backgroundColor"
                     android:textSize="18sp" />
 
             </LinearLayout>
@@ -123,14 +144,14 @@
 
                 <Button
                     android:id="@+id/btn_category5"
-                    android:text="Class String"
+                    android:text="@string/text_category5"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:background="#EB82749A"
                     android:textAllCaps="false"
-                    android:textColor="#fff"
+                    android:textColor="@color/categoriesTextColor"
+                    android:background="@color/backgroundColor"
                     android:textSize="18sp" />
 
             </LinearLayout>
@@ -142,14 +163,14 @@
 
                 <Button
                     android:id="@+id/btn_category6"
-                    android:text="Classes and Objects"
+                    android:text="@string/text_category6"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:background="#A3855B8E"
                     android:textAllCaps="false"
-                    android:textColor="#fff"
+                    android:textColor="@color/categoriesTextColor"
+                    android:background="@color/backgroundColor"
                     android:textSize="18sp" />
 
             </LinearLayout>
@@ -161,14 +182,14 @@
 
                 <Button
                     android:id="@+id/btn_category7"
-                    android:text="Heredity"
+                    android:text="@string/text_category7"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:background="#E2656C8C"
                     android:textAllCaps="false"
-                    android:textColor="#fff"
+                    android:textColor="@color/categoriesTextColor"
+                    android:background="@color/backgroundColor"
                     android:textSize="18sp" />
 
             </LinearLayout>
@@ -180,14 +201,14 @@
 
                 <Button
                     android:id="@+id/btn_category8"
-                    android:text="Exceptions Handling"
+                    android:text="@string/text_category8"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:background="#374965"
                     android:textAllCaps="false"
-                    android:textColor="#fff"
+                    android:textColor="@color/categoriesTextColor"
+                    android:background="@color/backgroundColor"
                     android:textSize="18sp" />
 
             </LinearLayout>
@@ -199,14 +220,14 @@
 
                 <Button
                     android:id="@+id/btn_category9"
-                    android:text="Input/Output Methods"
+                    android:text="@string/text_category9"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:background="#EB82749A"
                     android:textAllCaps="false"
-                    android:textColor="#fff"
+                    android:textColor="@color/categoriesTextColor"
+                    android:background="@color/backgroundColor"
                     android:textSize="18sp" />
 
             </LinearLayout>
@@ -218,14 +239,14 @@
 
                 <Button
                     android:id="@+id/btn_category10"
-                    android:text="Swing"
-                    android:layout_width="10dp"
+                    android:text="@string/text_category10"
+                    android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:background="#A3855B8E"
                     android:textAllCaps="false"
-                    android:textColor="#fff"
+                    android:textColor="@color/categoriesTextColor"
+                    android:background="@color/backgroundColor"
                     android:textSize="18sp" />
 
             </LinearLayout>

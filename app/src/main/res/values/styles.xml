@@ -16,6 +16,8 @@
         <item name="colorPrimaryDark">#153245</item>
     </style>
 
+
+
 <!-- Style for Horizontal Progress Bar, On Quizzes -->
     <style name="HorizontalProgressBar" parent="android:Widget.ProgressBar.Horizontal">
         <item name="android:indeterminateOnly">false</item>

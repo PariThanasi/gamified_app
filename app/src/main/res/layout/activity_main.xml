@@ -73,7 +73,7 @@
                         android:layout_weight="1"
                         android:layout_marginRight="10dp"
                         android:layout_gravity="center"
-                        app:cardBackgroundColor="#B3f2f4fa"
+                        app:cardBackgroundColor="#BFF2F4FA"
                         app:cardCornerRadius="20dp">
 
                         <RelativeLayout
@@ -82,11 +82,10 @@
 
                             <ImageView
                                 android:id="@+id/imagePlay"
-                                android:layout_width="150dp"
-                                android:layout_height="70dp"
+                                android:layout_width="146dp"
+                                android:layout_height="78dp"
                                 android:layout_centerInParent="true"
                                 android:src="@drawable/main_play">
-
                             </ImageView>
 
                             <TextView
@@ -118,7 +117,7 @@
                         android:layout_weight="1"
                         android:layout_marginRight="10dp"
                         android:layout_gravity="center"
-                        app:cardBackgroundColor="#B3f2f4fa"
+                        app:cardBackgroundColor="#D2F2F4FA"
                         app:cardCornerRadius="20dp">
 
                         <RelativeLayout
